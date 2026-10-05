@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fffafb;
+  color: #444;
+}
+
+header {
+  height: 70px;
+  padding: 0 8%;
+  background: white;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #d47f9c;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #d47f9c;
+}
+
+.home {
+  max-width: 1000px;
+  min-height: 520px;
+  margin: auto;
+  padding: 70px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.label {
+  color: #d47f9c;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.home h1 {
+  color: #333;
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.home-text > p:not(.label) {
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 6px;
+
+  background: #d98ca7;
+  color: white;
+
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.button:hover {
+  background: #c97996;
+}
+
+.photo {
+  width: 350px;
+  height: 400px;
+  flex-shrink: 0;
+
+  padding: 10px;
+  background: #f5dce5;
+  border-radius: 10px;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+
+  border-radius: 7px;
+}
+
+.tugas {
+  padding: 70px 8%;
+  background: #fff1f5;
+  text-align: center;
+}
+
+.tugas h2,
+.sosmed h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subjudul {
+  color: #777;
+  margin-bottom: 35px;
+}
+
+.cards {
+  max-width: 1000px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 30px 20px;
+
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+
+  text-align: left;
+}
+
+.card h3 {
+  color: #d47f9c;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card a {
+  color: #d47f9c;
+  text-decoration: none;
+  font-size: 14px;
+
+  border-bottom: 1px solid #d47f9c;
+  padding-bottom: 3px;
+}
+
+.sosmed {
+  padding: 80px 20px;
+  text-align: center;
+  background: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social {
+  display: inline-block;
+  min-width: 130px;
+
+  padding: 12px 20px;
+  border-radius: 6px;
+
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+.instagram {
+  background: #d47f9c;
+}
+
+.tiktok {
+  background: #333;
+}
+
+.github {
+  background: #d47f9c;
+}
+
+@media (max-width: 700px) {
+
+  header {
+    padding: 0 5%;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .photo {
+    width: 270px;
+    height: 330px;
+  }
+
+  .home h1 {
+    font-size: 34px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+}
